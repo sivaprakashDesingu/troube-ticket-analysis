@@ -1,0 +1,17 @@
+{
+  "name": "rando",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mysql": "^2.18.1"
+  },
+  "engines": {
+    "node": "10.3.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  }
+}

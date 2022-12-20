@@ -1,0 +1,182 @@
+[
+    {
+        "myservice": [
+            {
+                "icon": "globe",
+                "technology": "Website Design",
+                "discription": "Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization."
+            },
+            {
+                "icon": "mobile",
+                "technology": "Hybrid Mobile Application",
+                "discription": "A hybrid application (hybrid app) is one that combines elements of both native and Web applications. Native applications are developed for a specific platform and installed on a computing device."
+            },
+            {
+                "icon": "file-text-o",
+                "technology": "Newsletter solution ",
+                "discription": "A newsletter is a printed report containing news of the activities of a business or an organization that is sent by mail regularly to all its members, customers, employees or people, who are interested in. Newsletters generally contain one main topic of interest to its recipients."
+            },
+            {
+                "icon": "mobile",
+                "technology": "Native Mobile application",
+                "discription": "A native mobile app is a smartphone application that is coded in a specific programming language, such as Objective C for iOS or Java for Android operating systems. Native mobile apps provide fast performance and a high degree of reliability."
+            },
+            {
+                "icon": "desktop",
+                "technology": "Web Applicaiton",
+                "discription": "A Web application (Web app) is an application program that is stored on a remote server and delivered over the Internet through a browser interface."
+            },
+            {
+                "icon": "window-restore",
+                "technology": "Responsivce Layout   ",
+                "discription": "Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD."
+            }
+        ],
+        "education":[
+            {
+                "duration":"2008",
+                "degree":"SSLC",
+                "institute":"Goverment high school",
+                "place": "Kullanchavadi"
+            },
+            {
+                "duration":"2008 - 2010",
+                "degree":"HSC",
+                "institute":"Goverment Boys higher secondaryschool",
+                "place": "Kurinjipadi"
+            },
+            {
+                "duration":"2011 - 2014",
+                "degree":"Bachelor Degree",
+                "institute":"Jawahar Science College",
+                "place": "Neyveli"
+            },
+            {
+                "duration":"2014 - 2016",
+                "degree":"Master Degree",
+                "institute":"D.G.Vaishnav College",
+                "place": "Chennai"
+            }
+        ],
+        "experience" :[
+            {
+                "duration":"Dec 2016 - May 2019",
+                "Designation":"Web developer",
+                "Role":"FrontEnd UI/UX",
+                "place": "Chennai",
+                "employee": "Hotcourses India Pvt Ltd",
+                "responsibilities":[
+                    "Designed websites, portals and large scale web applications formultiple clients",
+                    "Coded user-customizable applications to convert raw data from design engine to easily understandable graphical formats",
+                    "Implemented site backup system to protect site from outages, data loss and data corruption",
+                    "Maintained strong education in latest technologies, software and hardware products for use in various projects",
+                    "Increased web traffic 95% by improving navigation, creating dynamic media sections and adding social media plugins"
+                ]
+            },
+            {
+                "duration":"Aug 2019 - Jun 2020",
+                "Designation":"Software Engineer",
+                "Role":"Full Stack Developer",
+                "place": "Chennai",
+                "employee": "ARM Soft Tech Private Limited",
+                "responsibilities":[
+                    "Coordinated with project managers across multiple initiatives to align development timeline's, plan testing and work with clientrepresentatives",
+                    "Evaluated software development project plans and recommended adjustments",
+                    "Developed cross-platform activity feed for social networking software products",
+                    "Established clear system operational specifications and formulated highly specific software requirements resulting in 100%"
+                ]
+            },
+            {
+                "duration":"Jun 2020 - Present",
+                "Designation":"Senior Full Stack Developer",
+                "Role":"Full Stack Developer",
+                "place": "Chennai",
+                "employee": "Verizon India Data Service  Pvt Ltd",
+                "responsibilities":[
+                    "Coordinated with Product managers across multiple initiatives to align development timeline's, plan testing and work with clientrepresentatives",
+                    "Coordinated with Product Managers with gathered the requirement and assigning to the team employees",
+                    "Organizing the Stand up call and gathers status from the team Employees and reports to Manager",
+                    "Code drops and taking care of Production releases"
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "technology": "HTML",
+                "percentage" : 98
+            },
+            {
+                "technology": "CSS",
+                "percentage" : 95
+            },
+            {
+                "technology": "ReactJS",
+                "percentage" : 85
+            },
+            {
+                "technology": "React Native",
+                "percentage" : 85
+            },
+            {
+                "technology": "Ionic Framework",
+                "percentage" : 80
+            },
+            {
+                "technology": "Angular JS (2,4,5)",
+                "percentage" : 80
+            },
+            {
+                "technology": "NodeJS",
+                "percentage" : 75
+            },
+            {
+                "technology": "PHP",
+                "percentage" : 70
+            },
+            {
+                "technology": "Photoshop",
+                "percentage" : 50
+            }
+        ],
+        "workingProcess":[
+            {
+                "process": "Research the Project",
+                "discription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            },
+            {
+                "process": "Prototype",
+                "discription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            },
+            {
+                "process": "Design & Developement",
+                "discription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            },
+            {
+                "process": "Unit Testing",
+                "discription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            },
+            {
+                "process": "Launch",
+                "discription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            }
+        ],
+        "contribution":[
+            {
+                "Tech": "React JS",
+                "Keyword":"react-input-textboxs",
+                "Source": "React Library/Module",
+                "link": "https://www.npmjs.com/package/react-input-textboxs",
+                "githubLink":"https://github.com/sivaprakashDesingu/react-input-textboxs",
+                "discription":"react-input-textboxs is a JavaScript library for React Applicaiton. This module containes varies form input box with variety of styles"
+            },
+            {
+                "Tech": "React JS",
+                "Keyword":"react-voice-recorder",
+                "Source": "React Library/Module",
+                "link": "https://www.npmjs.com/package/react-voice-recorder",
+                "githubLink":"https://github.com/sivaprakashDesingu/react-voice-recorder",
+                "discription":"This (react-voice-recorder) is a JavaScript library for React Applicaiton which will be used to record voice as audio and download the same."
+            }
+        ]
+    }
+]

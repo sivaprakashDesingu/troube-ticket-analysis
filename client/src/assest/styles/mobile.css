@@ -1,0 +1,98 @@
+@media only screen and (max-width:568px) {
+    .hamburger {
+        border-radius: 50%;
+        bottom: 20px;
+        top: auto;
+        left: auto;
+        right: 20px;
+    }
+    .grid{
+        display: block;
+    }
+    .profileMenu{
+        position: absolute;
+    }
+    .content {
+        padding: 50px 20px;
+        width: 100%;
+        float: none;
+    }
+    .profileMenu .hamburger{
+        top:70px;
+    }
+    .sectionMainheading {
+        font-size: 20px;
+    }
+
+    .serviceList .serviceItem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .serviceItem i {
+        color: #0098c6;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .exp-wrapper .line,.indicator{
+        left: 0px;
+        transform: translateX(0%);
+    }
+    .exp-wrapper .line{
+        height:1735px
+    }
+    .hc, .arm{
+        flex-direction:column;
+    }
+    .hcExp .des.left{
+        width: 90%;
+        min-width: 50%;
+        left: 40px;
+        transform: translateX(0%);
+    }
+    .hcExp .dis{
+        width: 90%;
+        min-width: 50%;
+        left: 40px;
+        top: 20px;
+    }
+    .hcExp .indicator{
+        top:168px;
+    }
+
+    .skill-wrapper .skill-item{
+        width:100%;
+    }
+    .cont-item{
+        flex-direction:column;
+        align-items:center;
+    }
+    .cont-item .details-wrapper{
+        text-align:center;
+    }
+    .details-wrapper .links{
+        padding:20px 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .pagewrapper{
+        padding-top:50px;
+    }
+    .pagewrapper.opened{
+        padding-top:0;
+    }
+    .dwn-resume-btn{
+        top: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    right: 0;
+    max-width: 100%;
+    }
+}
