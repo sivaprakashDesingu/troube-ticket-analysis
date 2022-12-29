@@ -1,18 +1,31 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const cors = require('cors')
+const cors = require('cors');
+const fs = require('fs');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+const customCss = fs.readFileSync((process.cwd()+"/swagger.css"), 'utf8');
 const { connection } = require('./Config/Database');
+const { cassandraConfig } = require("./Config/Casendra");
 const app = express();
 
-/* connect to database */
+/* connect to database 
 connection.connect((err) => {
   if (err) {
     console.error('Error connecting: ' + err.stack);
     return;ss
   }
   console.log('Mysql Connected...');
-}); 
+});  */
+
+/* CASSANDRA CONNECION */
+cassandraConfig.connect().then(function () {
+  console.log('Connected to Cassandra cluster with %d host(s): %j', cassandraConfig.hosts.length, cassandraConfig.hosts.keys());
+  cassandraConfig.hosts.forEach(function (host) {
+    console.log(host.address, host.datacenter, host.rack);
+  });
+})
 
 const user = require('./routes/user');
 const transaction = require('./routes/transaction');
@@ -48,6 +61,10 @@ app.use(function (req, res, next) {
 /*app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });*/
+
+
+// let express to use this
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, {customCss}));
 
 app.use('/api/user', user);
 app.use('/api/transaction', transaction)

@@ -7,9 +7,11 @@ var userControll = require('../controllers/User');
 
 // a simple test url to check that all of our files are communicating correctly.
 router.get('/test', userControll.test);
-//router.get('/user', userControll.userDetails);
-router.get('/isLoggedIn',userControll.isLoggedIn)
+router.get('/:empID', userControll.userDetails);
+router.post('/isLoggedIn',userControll.isLoggedIn)
 //router.post('/register',userControll.register)
 
 
 module.exports = router;
+
+

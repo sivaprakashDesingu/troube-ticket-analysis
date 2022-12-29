@@ -1,5 +1,8 @@
 import React from "react";
-import { SimpleAreaChart,BarCharts } from './../Charts/index'
+import { SimpleAreaChart,BarCharts } from './../Charts/index';
+
+
+
 function Dashboard() {
     return (
         <div className="wrapper">

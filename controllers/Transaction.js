@@ -1,7 +1,34 @@
 const { connection } = require("./../Config/Database");
-
+const isLocal = true;
 exports.getChannelCount = function (request, response) {
-
+    if(isLocal){
+        const locaRes = {
+            "status": 200,
+            "error": null,
+            "data_xaxis": [
+                "web",
+                "mob-app",
+                "livechat",
+                "chatbot",
+                "email",
+                "call",
+                "mobile-app",
+                "live-chat"
+            ],
+            "data_yaxis": [
+                36,
+                23,
+                25,
+                19,
+                21,
+                27,
+                2,
+                1
+            ]
+        }
+        
+        return locaRes;        
+    }
     let sql = "select channel,count(*) as ticketcount from tbltroubleticket group by channel";
     connection.query(sql, (err, results) => {
         var tickcnt = [];
