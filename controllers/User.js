@@ -1,16 +1,15 @@
 const { cassandraConfig } = require("./../Config/Casendra");
 
-exports.test = function (req, res) {
-    res.send('User controller!');
+exports.test = function (request, response) {
+    response
+        .status(200)
+        .json({
+            "status": "UP",
+            "message": "User Test API",
+            "data": "User Test API",
+        });
+    return
 };
-
-
-// async function fetchUSerData(emailId){
-//     User.find({ emailId: emailId }, function (err, user) {
-//         console.log(user)
-//         return user[0]
-//     })
-// }
 
 
 exports.isLoggedIn = function (request, response) {
@@ -31,10 +30,10 @@ exports.isLoggedIn = function (request, response) {
                 return
             } else {
                 response
-                    .status(400)
+                    .status(401)
                     .json({
                         "status": "FAILED",
-                        "message": "User Not Available",
+                        "message": "Un Authorized User",
                         "data": []
                     });
                 return

@@ -7,7 +7,9 @@ import {
 } from "react-router-dom";
 import Login from "./container/Login";
 import Dashboard from "./container/Dashboard";
+import { TroubleTicket } from './container/Index';
 import './assest/styles/master.css'
+import './index.css';
 const App = () => {
   const [loggedIn, setloggedIn] = useState(false);
 
@@ -22,6 +24,9 @@ const App = () => {
           <Route path="/dashboard">
             {loggedIn ? <Dashboard /> : <Redirect to="/" />}
           </Route>
+          <Route path="/trouble-ticket">
+            {!loggedIn ? <TroubleTicket /> : <Redirect to="/" />}
+          </Route>
           <Route path="/">
             {loggedIn ? (
               <Redirect to="/dashboard" />
@@ -29,6 +34,7 @@ const App = () => {
               <Login parentCallback={callbackFunction} />
             )}
           </Route>
+         
         </Switch>
       </Router>
     </div>
