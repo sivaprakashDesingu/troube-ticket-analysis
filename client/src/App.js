@@ -19,12 +19,12 @@ const App = () => {
     <div className="trouble-ticket-app">
       <Router>
         <Switch>
-          <Route path="/Dashboard">
+          <Route path="/dashboard">
             {loggedIn ? <Dashboard /> : <Redirect to="/" />}
           </Route>
           <Route path="/">
             {loggedIn ? (
-              <Redirect to="/Dashboard" />
+              <Redirect to="/dashboard" />
             ) : (
               <Login parentCallback={callbackFunction} />
             )}
