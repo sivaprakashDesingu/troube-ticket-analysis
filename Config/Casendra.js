@@ -9,7 +9,7 @@ const client = new cassandra.Client({
     contactPoints: ['127.0.0.1'],
     localDataCenter: 'datacenter1',
     authProvider,
-    keyspace: 'empdb',
+    keyspace: 'troubleticket',
 });
 
 module.exports = {

@@ -13,9 +13,9 @@ exports.test = function (request, response) {
 
 
 exports.isLoggedIn = function (request, response) {
-    const { empId } = request.body;
-    const query = `SELECT * FROM employee WHERE emp_id = ${empId}`;
-    console.log('Checking Is user already register or not =>', empId);
+    const { agentid } = request.body;
+    const query = `SELECT * FROM user WHERE agentid = ${agentid}`;
+    console.log('Checking Is user already register or not =>', agentid);
 
     cassandraConfig.execute(query)
         .then(result => {
@@ -78,9 +78,9 @@ exports.register = function (request, response) {
 };
 
 exports.userDetails = function (request, response) {
-    const emp_id = request.param('empID')
-    console.log('Request to fetch User of --->', emp_id);
-    const query = `SELECT * FROM employee WHERE emp_id = ${emp_id}`;
+    const agentid = request.param('empID')
+    console.log('Request to fetch User of --->', agentid);
+    const query = `SELECT * FROM user WHERE agentid = ${agentid}`;
     cassandraConfig.execute(query)
         .then(result => {
             if (result && result.rowLength >= 1) {
