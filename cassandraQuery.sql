@@ -8,3 +8,7 @@ INSERT INTO troubleticket.user ("agentid","email","password","isadmin","status",
 INSERT INTO troubleticket.user ("agentid","email","password","isadmin","status","created_on") VALUES(2,'srini@linux.com','Admin@123','Y','ACTIVE','12/31/2022');
 --------------------------
 
+CREATE TABLE accessToken("agentid" int,"token" varchar, PRIMARY KEY("token"));
+
+
+

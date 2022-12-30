@@ -10,6 +10,12 @@ const { connection } = require('./Config/Database');
 const { cassandraConfig } = require("./Config/Casendra");
 const app = express();
 
+const user = require('./routes/user');
+const transaction = require('./routes/transaction');
+
+//Middle ware for Auth token
+const middleWare = require('./middleware');
+
 /* connect to database 
 connection.connect((err) => {
   if (err) {
@@ -27,8 +33,6 @@ cassandraConfig.connect().then(function () {
   });
 })
 
-const user = require('./routes/user');
-const transaction = require('./routes/transaction');
 
 
 app.use(bodyParser.json());
@@ -63,9 +67,10 @@ app.use(function (req, res, next) {
 });*/
 
 
+
 // let express to use this
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, {customCss}));
-
+middleWare(app)
 app.use('/api/user', user);
 app.use('/api/transaction', transaction)
 
