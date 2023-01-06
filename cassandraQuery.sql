@@ -9,6 +9,10 @@ INSERT INTO troubleticket.user ("agentid","email","password","isadmin","status",
 --------------------------
 
 CREATE TABLE accessToken("agentid" int,"token" varchar, PRIMARY KEY("token"));
+--------------------------
+INSERT INTO troubleticket.accessToken ("agentid","token") VALUES(1,'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU2F0IERlYyAzMSAyMDIyIDExOjA1OjAwIEdNVCswNTMwIChJbmRpYSBTdGFuZGFyZCBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY3MjQ2NDkwMH0.9JXxjW_DHEAI0fmHTRe-QyOTu0V3WucTR5XbkPe_D3w');
+INSERT INTO troubleticket.accessToken ("agentid","token") VALUES(2,'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiU2F0IERlYyAzMSAyMDIyIDExOjA3OjIyIEdNVCswNTMwIChJbmRpYSBTdGFuZGFyZCBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY3MjQ2NTA0Mn0.G1roPP0LuF1yhCA4S_dZCjWfPVnKF1Su1jCNcv89Qzc');
+--------------------------
 
 
 

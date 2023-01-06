@@ -3,6 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const fs = require('fs');
+const dotenv = require('dotenv');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const customCss = fs.readFileSync((process.cwd()+"/swagger.css"), 'utf8');
@@ -15,6 +16,9 @@ const transaction = require('./routes/transaction');
 
 //Middle ware for Auth token
 const middleWare = require('./middleware');
+
+// Set up Global configuration access
+dotenv.config();
 
 /* connect to database 
 connection.connect((err) => {
